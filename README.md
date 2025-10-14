@@ -3,6 +3,8 @@ The [Coospo CS600](https://www.coospo.com/products/cs600-bike-computer) is a GPS
 
 The format of these maps is [Mapsforge Compact Binary .MAP](http://mapsforge.org/). These are generated using [Open Street Map](https://www.openstreetmap.org/) data. With a little effort, you can generate your own .map files containing trails!
 
+![Coospo CS600 Trails](https://raw.githubusercontent.com/Se7enLC/coospo-map-generation/refs/heads/main/coospo_cs600_trails.jpg)
+
 ## Details about CS600 Maps
 * Map files are available by region (in the US it's by state, for example).
 * Filenames take the form of a 2-letter country code, 4 digit ID, and the date in YYYYMMDD format, with the extension .map. Example: `US260020250528.map`. The numbering system for the 4-digit ID is unknown, but can be worked out by downloading a region from the [Coospo Map Download](https://www.coospo.com/pages/map-download) page and looking at the filename.
