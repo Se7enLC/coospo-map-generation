@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<translations>
+  <translation>
+    <name>Convert Secondary to Primary</name>
+    <description>Remap highway:secondary to highway:primary</description>
+    <match type="way">
+      <tag k="highway" v="secondary"/>
+    </match>
+    <output>
+      <copy-unmatched/>
+      <tag k="highway" v="primary"/>
+    </output>
+  </translation>
+  <translation>
+    <name>Convert Residential, Service, Unclassified to Tertiary</name>
+    <description>Remap highway:residential, service, unclassified to highway:tertiary</description>
+    <match type="way">
+      <tag k="highway" v="residential|service|unclassified"/>
+    </match>
+    <output>
+      <copy-unmatched/>
+      <tag k="highway" v="tertiary"/>
+    </output>
+  </translation>
+  <translation>
+    <name>Convert Bike Paths to Unclassified</name>
+    <description>Remap highway:path, track cycleway, footway, and bridleway to highway:unclassified</description>
+    <match type="way">
+      <tag k="highway" v="path|track|cycleway|footway|bridleway"/>
+    </match>
+    <output>
+      <copy-unmatched/>
+      <tag k="highway" v="unclassified"/>
+    </output>
+  </translation>
+</translations>
