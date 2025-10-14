@@ -102,6 +102,11 @@ The `tag-mapping.xml` file provides a configuration Map Writer plugin to know wh
 ## File Size
 It's also important to keep the file size down by removing data that the Coospo wasn't going to display anyway. This can be done by including only roads and water, filtering out the rest of the data that may be present.
 
+## Installing Osmosis and Map Writer Plugin
+As these are Java applications, they can be run on any system, provided a compatible version of Java is installed and your enviroment is set up properly. That being said, it's much easier to use a Docker image. I included the `Dockerfile` I used. Edit it to include your UID/GID.
+* To build the docker: `docker build -t osmosis .`
+* To run the docker: `docker run --volume YOUR_DATA_DIRECTORY:/data -it osmosis`
+
 ## Example Execution
 ```bash
 # MA downloaded from https://download.geofabrik.de/north-america/us.html
