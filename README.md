@@ -108,6 +108,7 @@ As these are Java applications, they can be run on any system, provided a compat
 * To run the docker: `docker run --volume YOUR_DATA_DIRECTORY:/data -it osmosis`
 
 ## Example Execution
+The execution is broken up into 4 stages: Extraction of Ways, Extraction of Relations, Merging and Filtering, Writing the .MAP file. Only roads and water are included.
 ```bash
 # MA downloaded from https://download.geofabrik.de/north-america/us.html
 INPUT_FILENAME=massachusetts-251009.osm.pbf
@@ -120,6 +121,7 @@ ZOOM_LEVEL=12,12,13,14,14,20
 
 TAG_CONF_FILE=tag-mapping.xml
 TRANSFORM_FILE=highway_type.transform.xml
+echo "=== Extracting Ways ==="
 osmosis --read-pbf-fast file=${INPUT_FILENAME} workers=8 \
     --tf accept-ways highway=* waterway=* natural=water \
     --tf reject-relations \
