@@ -185,7 +185,7 @@
         <osm-tag key="highway" value="services" zoom-appear="14"/>
         <osm-tag key="highway" value="steps" zoom-appear="16"/>
         <osm-tag key="highway" value="tertiary" zoom-appear="14"/>
-        <osm-tag key="highway" value="tertiary_link" zoom-appear="10"/>
+        <osm-tag key="highway" value="tertiary_link" zoom-appear="14"/>
         <osm-tag key="highway" value="track" zoom-appear="12"/>
         <osm-tag key="highway" value="trunk" zoom-appear="6"/>
         <osm-tag key="highway" value="trunk_link" zoom-appear="6"/>
@@ -587,20 +587,6 @@
         <osm-tag key="aeroway" value="runway" zoom-appear="10"/>
         <osm-tag key="aeroway" value="taxiway" zoom-appear="10"/>
         <osm-tag key="aeroway" value="terminal" zoom-appear="15"/>
-    </ways>
-
-    <!-- SKI SLOPES TAGS -->
-    <ways>
-        <osm-tag key="piste:type" value="downhill" zoom-appear="13"/>
-        <osm-tag key="piste:type" value="nordic" zoom-appear="13"/>
-        <osm-tag key="piste:type" value="sled" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="cable_car" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="chair_lift" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="drag_lift" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="gondola" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="magic_carpet" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="mixed_lift" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="rope_tow" zoom-appear="13"/>
     </ways>
 
     <!-- OTHER TAGS -->
