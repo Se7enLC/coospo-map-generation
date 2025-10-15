@@ -100,6 +100,7 @@ The `tag-mapping.xml` file provides a configuration Map Writer plugin to know wh
         <osm-tag key="highway" value="unclassified" zoom-appear="14"/>
     </ways>
 ```
+In some cases you may need to modify other sections of `tag-mapping.xml` as well. For example, some bike trails are also marked for Nordic skiing, and there's a section of `tag-mapping.xml` that sets zoom-appear for nortic trails separately from using the highway tag.
 
 ## File Size
 It's also important to keep the file size down by removing data that the Coospo wasn't going to display anyway. This can be done by including only roads and water, filtering out the rest of the data that may be present.
