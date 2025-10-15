@@ -9,7 +9,7 @@ The format of these maps is [Mapsforge Compact Binary .MAP](http://mapsforge.org
 * Map files are available by region (in the US it's by state, for example).
 * Filenames take the form of a 2-letter country code, 4 digit ID, and the date in YYYYMMDD format, with the extension .map. Example: `US260020250528.map`. The numbering system for the 4-digit ID is unknown, but can be worked out by downloading a region from the [Coospo Map Download](https://www.coospo.com/pages/map-download) page and looking at the filename.
 * You can replace a map file with one that you generate of the same region.
-* As far as I'm aware, you cannot use different .map filenames, or they will not be loaded.
+* The map filename does not seem to be hard-coded to a state. But only certain filenames will load. `US520020250528.map` will load, for example. As will `US52MA20250528.map`. `USMA0020250528.map` will NOT load.
 * Maps for the CS600 use Zoom level 12 for the 0.5mi scale and Zoom Level 14 for 0.2mi, 0.1mi, 300ft, and 150ft.
 * The CS600 can display three different road styles and water, as well as road name labels.
 * highway:primary, highway:motorway appear as a thick yellow line
