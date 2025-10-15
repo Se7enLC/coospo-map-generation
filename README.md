@@ -18,6 +18,61 @@ The format of these maps is [Mapsforge Compact Binary .MAP](http://mapsforge.org
 * other types (such as path, track, cycleway, footpath, bridleway) do not appear at all!
 * If you include too many items at Zoom Level 12 (maximum zoom out), you will crash the device (reboot).
 
+## US State Map Filenames
+| US State | Map Filename |
+| :-- | :-- |
+| Alabama | US460020250528.map |
+| Alaska | US020020250528.map |
+| Arizona | US470020250528.map |
+| Arkansas | US010020250528.map |
+| California | US180020250528.map |
+| Colorado | US210020250528.map |
+| Connecticut | US200020250528.map |
+| Delaware | US380020250528.map |
+| Florida | US130020250528.map |
+| Georgia | US510020250528.map |
+| Hawaii | US420020250528.map |
+| Idaho | US040020250528.map |
+| Illinois | US480020250528.map |
+| Indiana | US490020250528.map |
+| Iowa | US030020250528.map |
+| Kansas | US190020250528.map |
+| Kentucky | US220020250528.map |
+| Lousiana | US230020250528.map |
+| Maine | US310020250528.map |
+| Massachusetts | US260020250528.map |
+| Maryland | US250020250528.map |
+| Michigan | US300020250528.map |
+| Minnesota | US320020250528.map |
+| Mississippi | US290020250528.map |
+| Missouri | US280020250528.map |
+| Montana | US270020250528.map |
+| Nebraska | US350020250528.map |
+| Nevada | US360020250528.map |
+| New Hampshire | US430020250528.map |
+| New Jersey | US450020250528.map |
+| New Mexico | US440020250528.map |
+| New York | US370020250528.map |
+| North Carolina | US060020250528.map |
+| North Dakota | US050020250528.map |
+| Ohio | US090020250528.map |
+| Oklahoma | US100020250528.map |
+| Oregon | US110020250528.map |
+| Pennsylvania | US070020250528.map |
+| Rhode Island | US240020250528.map |
+| South Carolina | US340020250528.map |
+| South Dakota | US330020250528.map |
+| Tennessee | US390020250528.map |
+| Texas | US080020250528.map |
+| Utah | US500020250528.map |
+| Vermont | US140020250528.map |
+| Virginia | US120020250528.map |
+| Washington State | US160020250528.map |
+| Washington DC | US150020250528.map |
+| West Virginia | US410020250528.map |
+| Wisconsin | US400020250528.map |
+| Wyoming | US170020250528.map |
+
 ## How to generate maps
 Using two tools, [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis) and [Mapsforge Writer Plugin](http://mapsforge.org/), you can take an Open Street Map export, modify it, and save it as a Mapsforge .map file for use with the Coospo CS600.
 
