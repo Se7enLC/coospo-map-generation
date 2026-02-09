@@ -26,7 +26,10 @@ RUN ln -s /usr/local/osmosis/bin/osmosis /usr/bin
 RUN wget https://github.com/mapsforge/mapsforge/releases/download/${MAPSFORGE_VERSION}/mapsforge-map-writer-${MAPSFORGE_VERSION}-jar-with-dependencies.jar
 
 # install mapsforge-map-writer
-RUN mv mapsforge-map-writer-${MAPSFORGE_VERSION}-jar-with-dependencies.jar /usr/local/osmosis/lib/
+# Java resolves user.home from /etc/passwd (UID 1000 = ubuntu -> /home/ubuntu)
+RUN mkdir -p /home/ubuntu/.openstreetmap/osmosis/plugins && \
+    mv mapsforge-map-writer-${MAPSFORGE_VERSION}-jar-with-dependencies.jar /home/ubuntu/.openstreetmap/osmosis/plugins/ && \
+    chown -R 1000:1000 /home/ubuntu
 
 # install java
 RUN apt-get install -y --no-install-recommends default-jre-headless \

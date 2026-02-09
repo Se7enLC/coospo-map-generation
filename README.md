@@ -163,7 +163,11 @@ It's also important to keep the file size down by removing data that the Coospo 
 ## Installing Osmosis and Map Writer Plugin
 As these are Java applications, they can be run on any system, provided a compatible version of Java is installed and your enviroment is set up properly. That being said, it's much easier to use a Docker image. I included the `Dockerfile` I used. Edit it to include your UID/GID.
 * To build the docker: `docker build -t osmosis .`
-* To run the docker: `docker run --volume YOUR_DATA_DIRECTORY:/data -it osmosis`
+* To run the docker:
+  - macOS / Linux:
+    `docker run --volume $(pwd):/data -it osmosis`
+  - Windows (PowerShell):
+    `docker run --volume ${PWD}:/data -it osmosis`
 
 ## Example Execution
 The execution is broken up into 4 stages: Extraction of Ways, Extraction of Relations, Merging and Filtering, Writing the .MAP file. Only roads and water are included.
